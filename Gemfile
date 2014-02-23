@@ -38,6 +38,8 @@ gem "devise"
 gem 'haml-rails'
 gem 'factory_girl_rails'
 gem "thin"
+gem 'bootstrap-sass', '~> 3.0.3.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
