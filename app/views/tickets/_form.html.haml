@@ -1,0 +1,15 @@
+=form_for @ticket do |ticket|
+  = fields_for @ticket.author do |user|
+    = label(:name, 'Name')
+    = user.text_field :name
+    %br
+    = label(:email, 'Email')
+    = user.text_field :email
+    %br
+  = label(:ticket, 'subject')
+  = ticket.text_field :subject
+  %br
+  = label(:ticket, 'Text')
+  = ticket.text_area :body
+  %br
+  =ticket.submit class: 'btn btn-success'
